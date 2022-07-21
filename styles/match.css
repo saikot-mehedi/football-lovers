@@ -1,0 +1,175 @@
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*--------- Base styles---------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+footer{
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------Banner Section----------------- */
+header{
+    background-color: gray;
+    height: 646px;
+    
+    margin: 50px 250px;
+    padding: 0;
+    border-radius: 30px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    height: 645px;
+}
+/* ----------- Hover & Cursor ---------- */
+.banner:hover{
+    background-color: coral;
+    border-radius: 30px;
+    border-bottom: 30px;
+    cursor: pointer;
+}
+.banner-info{
+    color: white;
+    width: 550px;
+    height: 424px;
+    margin-right: 50px;
+}
+.banner-info h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0%;
+}
+.banner-info h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-info button{
+    color: white;
+    width: 187px;
+    height: 56px;
+    background-color: crimson;
+    font-size:20px ;
+    border-radius: 8px;
+    border-style: none;
+}
+.banner-img img{
+    width: 600px;
+    height: 615px;
+    padding-top: 31px;
+}
+/* -------------------------------Main section------------------------------- */
+.containers{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.containers .container{
+    display: flex;
+    justify-content: center;
+}
+/* --------Page Buttons------------- */
+.page-buttons{
+    background-color: gray;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.container .page-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 312px;
+    height: 312px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.page-buttons button{
+    width: 252px;
+    height: 64px;
+    border: 0;
+    border-radius: 5px;
+}
+.page-buttons #match-button{
+    background-color: crimson;
+}
+.page-buttons #match-button a{
+   color: white;
+}
+.page-buttons button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* ---------Match-list portion----------- */
+.container .matchs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.matchs .match{
+    width: 312px;
+    height: 242px;
+    border-radius: 5px;
+    background-color: rgb(234, 234, 238);
+}
+.match .match-country{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.match-country p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.matchs .match .match-info{
+    padding-left: 10px;
+
+}
+.match .match-info h2,h5{
+    text-align: center;
+}
+.match .match-info h5{
+    font-weight: 400;
+    font-size: 16px;
+}
+/*---------------- Footer---------------- */
+footer{
+    background-color: gray;
+    ;
+    padding: 150px 250px;
+    margin: 0%;
+}
+.footer-parts h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+}
+hr{
+    width: 1200px;
+    height: 1px;
+    background-color: rgb(221, 213, 213);
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.footer-list li{
+    list-style: none;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+/*--------- Social Icons---------- */
+.social-icon p{
+    margin-top: 75px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: whitesmoke;
+}
+

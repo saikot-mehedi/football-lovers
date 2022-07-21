@@ -1,0 +1,435 @@
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*--------- Base styles---------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+footer{
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------Banner Section----------------- */
+header{
+    background-color: gray;
+    height: 646px;
+    
+    margin: 50px 250px;
+    padding: 0;
+    border-radius: 30px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    height: 645px;
+}
+/* -----------Hover & Cursor ---------- */
+.banner:hover{
+    background-color: coral;
+    border-radius: 30px;
+    border-bottom: 30px;
+    cursor: pointer;
+}
+.banner-info{
+    color: white;
+    width: 550px;
+    height: 424px;
+    margin-right: 50px;
+}
+.banner-info h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0%;
+}
+.banner-info h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-info button{
+    color: white;
+    width: 187px;
+    height: 56px;
+    background-color: crimson;
+    font-size:20px ;
+    border-radius: 8px;
+    border-style: none;
+}
+.banner-img img{
+    width: 600px;
+    height: 615px;
+    padding-top: 31px;
+}
+/* -------------------------------Main section------------------------------- */
+.containers{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.containers .container{
+    display: flex;
+    justify-content: center;
+}
+/* --------Page Buttons------------- */
+.page-buttons{
+    background-color: gray;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.container .page-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 312px;
+    height: 312px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.page-buttons button{
+    width: 252px;
+    height: 64px;
+    border: 0;
+    border-radius: 5px;
+}
+.page-buttons #blog-button{
+    background-color: crimson;
+}
+.page-buttons #blog-button a{
+   color: white;
+}
+.page-buttons button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* ---------Blogs portion----------- */
+.container .blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.blogs .blog{
+    width: 312px;
+    height: 362px;
+    border-radius: 5px;
+    background-color: rgb(234, 234, 238);
+}
+.blogs .blog .blog-info{
+    padding-left: 10px;
+}
+.blogs .blog .blog-info button{
+    font-weight: 500;
+    font-size: 16px;
+    width: 100px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.blogs .blog .blog-info p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.blogs .blog .blog-info p img{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+/*---------------- Footer---------------- */
+footer{
+    background-color: gray;
+    ;
+    padding: 150px 250px;
+    margin: 0%;
+}
+.footer-parts h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+}
+hr{
+    width: 1200px;
+    height: 1px;
+    background-color: rgb(221, 213, 213);
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.footer-list li{
+    list-style: none;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+/*--------- Social Icons---------- */
+.social-icon p{
+    margin-top: 75px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: whitesmoke;
+}
+/* -------------------Media Quereis------------------- */
+/* -------Mobile Device------- */
+@media screen and (max-width: 576px) {
+    header{
+        width: 334px;
+        height: 472px;
+        margin-bottom: 0%;
+        margin-left: 112px;
+    }
+    .banner{
+        width: 334px;
+        height: 472px;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .banner-info{
+        flex-direction: column;
+        width: 258px;
+        height: 178px;
+        color: white;
+        margin-right: 50px;
+        padding-left: 20px;
+    }
+    .banner-img img{
+        width: 233px;
+        height: 215px;
+        padding-top:50px ;
+        padding-left: 20px;
+        margin-top: 32px;
+    }
+    .banner-info h1{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+    .banner-info h4{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .banner-info button{
+        color: white;
+        width: 148px;
+        height: 33px;
+        background-color: crimson;
+        font-size:20px ;
+        border-radius: 5px;
+        border-style: none;
+        margin-left: 68px;
+    }
+    /* ---------Main Section----------- */
+    .containers{
+        margin-top: 0%;
+    }
+    .containers .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-buttons{
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    .container .page-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 210px;
+        height: 176px;
+    }
+    .page-buttons button{
+        width: 174px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .container .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 5px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    /* -----------------------footer------------------------ */
+    footer{
+        background-color: gray;
+        ;
+        padding: 30px 17px;
+        margin: 0%;
+    }
+    .footer-parts h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 22px;
+        color: white;
+    }
+    hr{
+        width: 335px;
+        height: 0px;
+        background-color: rgb(221, 213, 213);
+    }
+    .footer-list{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .footer-list li{
+        list-style: none;
+        font-weight: 300;
+        font-size: 14px;
+        color: white;
+    }
+    .social-icon p{
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        color: whitesmoke;
+    }
+
+}
+
+/* --------------------Tablet Device-------------------- */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    header{
+        width: 776px;
+        height: 472px;
+        margin-bottom: 0%;
+        margin-left: 112px;
+    }
+    .banner{
+        width: 776px;
+        height: 472px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;   
+    }
+    .banner-info{
+        flex-direction: column;
+        width: 316px;
+        height: 276px;
+        color: white;
+        margin-right: 50px;
+        padding-left: 40px;
+        padding-top: 0%;
+    }
+    .banner-img img{
+        width: 376px;
+        height: 396px;
+        padding-top:50px ;
+        padding-left: 20px;
+        margin-top: 32px;
+    }
+    .banner-info h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .banner-info h4{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    .banner-info button{
+        color: white;
+        width: 161px;
+        height: 48px;
+        background-color: crimson;
+        font-size:20px ;
+        border-radius: 5px;
+        border-style: none;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 0%;
+    }
+    /* ---------Main Section----------- */
+    .containers{
+        margin-top: 0%;
+    }
+    .containers .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-buttons{
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    .container .page-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 609px;
+        height: 64px;
+    }
+    .page-buttons button{
+        width: 174px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .container .blogs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 5px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    /* -----------------------footer------------------------ */
+    footer{
+        background-color: gray;
+        ;
+        padding: 70px 30px;
+        margin: 0%;
+    }
+    .footer-parts h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 40px;
+        color: white;
+    }
+    hr{
+        width: 734px;
+        height: 0px;
+        background-color: rgb(221, 213, 213);
+    }
+    .footer-list{
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px ;
+        justify-items: center;
+        padding-top: 55px;
+        padding-left: 103px;
+        padding-right: 103px;
+    }
+    .footer-list li{
+        list-style: none;
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+    .social-icon p{
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        color: whitesmoke;
+    }
+}
