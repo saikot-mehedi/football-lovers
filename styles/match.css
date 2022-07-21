@@ -435,11 +435,16 @@ hr{
     }
     .footer-list{
         display: grid;
-        grid-template-columns: 150px 150px 150px 150px ;
-        justify-items: center;
+        grid-template-columns: 185px 199px 149px 129px ;
+        justify-content: center;
         padding-top: 55px;
         padding-left: 103px;
         padding-right: 103px;
+    }
+    .footer-list .last-buttons{
+        text-align: right;
+        padding-left: 20px;
+        margin-top: 15px;
     }
     .footer-list li{
         list-style: none;
