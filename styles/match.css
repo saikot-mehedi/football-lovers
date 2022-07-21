@@ -133,6 +133,24 @@ header{
     font-weight: 400;
     font-size: 16px;
 }
+/* ------------------------------- view all option------------------------------------ */
+.viewall-option{
+    display: flex;
+    justify-content: center;
+}
+.viewall-option button{
+    width: 131px;
+    height: 47px;
+    background-color: crimson;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 50px;
+    margin-top: 0%;
+    visibility: hidden;
+}
 /*---------------- Footer---------------- */
 footer{
     background-color: gray;
@@ -173,3 +191,267 @@ hr{
     color: whitesmoke;
 }
 
+/*------------------------------------------------ Media Queries----------------------------------------- */
+/* -------------- Mobile Device ----------------- */
+@media screen and (max-width: 576px) {
+    header{
+        width: 334px;
+        height: 472px;
+        margin-bottom: 0%;
+        margin-left: 112px;
+    }
+    .banner{
+        width: 334px;
+        height: 472px;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .banner-info{
+        flex-direction: column;
+        width: 258px;
+        height: 178px;
+        color: white;
+        margin-right: 50px;
+        padding-left: 20px;
+    }
+    .banner-img img{
+        width: 233px;
+        height: 215px;
+        padding-top:50px ;
+        padding-left: 20px;
+        margin-top: 32px;
+    }
+    .banner-info h1{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+    .banner-info h4{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .banner-info button{
+        color: white;
+        width: 148px;
+        height: 33px;
+        background-color: crimson;
+        font-size:20px ;
+        border-radius: 5px;
+        border-style: none;
+        margin-left: 68px;
+    }
+    /* ---------Main Section----------- */
+    .containers{
+        margin-top: 0%;
+    }
+    .containers .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-buttons{
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    .container .page-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 210px;
+        height: 176px;
+    }
+    .page-buttons button{
+        width: 174px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .container .matchs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 5px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    /* -----------------------footer------------------------ */
+    footer{
+        background-color: gray;
+        ;
+        padding: 30px 17px;
+        margin: 0%;
+    }
+    .footer-parts h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 22px;
+        color: white;
+    }
+    hr{
+        width: 335px;
+        height: 0px;
+        background-color: rgb(221, 213, 213);
+    }
+    .footer-list{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .footer-list li{
+        list-style: none;
+        font-weight: 300;
+        font-size: 14px;
+        color: white;
+    }
+    .social-icon p{
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        color: whitesmoke;
+    }
+
+}
+
+/* -------------- Media Queries for Tablet Device ----------------- */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    header{
+        width: 776px;
+        height: 472px;
+        margin-bottom: 0%;
+        margin-left: 112px;
+    }
+    .banner{
+        width: 776px;
+        height: 472px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;   
+    }
+    .banner-info{
+        flex-direction: column;
+        width: 316px;
+        height: 276px;
+        color: white;
+        margin-right: 50px;
+        padding-left: 40px;
+        padding-top: 0%;
+    }
+    .banner-img img{
+        width: 376px;
+        height: 396px;
+        padding-top:50px ;
+        padding-left: 20px;
+        margin-top: 32px;
+    }
+    .banner-info h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .banner-info h4{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    .banner-info button{
+        color: white;
+        width: 161px;
+        height: 48px;
+        background-color: crimson;
+        font-size:20px ;
+        border-radius: 5px;
+        border-style: none;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 0%;
+    }
+    /* ---------Main Section----------- */
+    .containers{
+        margin-top: 0%;
+    }
+    .containers .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-buttons{
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    .container .page-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 609px;
+        height: 64px;
+    }
+    .page-buttons button{
+        width: 174px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .container .matchs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 5px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    /* ---------------------------Viewall-option visibility for tablet device----------------------- */
+    .viewall-option button{
+        visibility: visible;
+    }
+    /* -----------------------footer------------------------ */
+    footer{
+        background-color: gray;
+        ;
+        padding: 70px 30px;
+        margin: 0%;
+    }
+    .footer-parts h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 40px;
+        color: white;
+    }
+    hr{
+        width: 734px;
+        height: 0px;
+        background-color: rgb(221, 213, 213);
+    }
+    .footer-list{
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px ;
+        justify-items: center;
+        padding-top: 55px;
+        padding-left: 103px;
+        padding-right: 103px;
+    }
+    .footer-list li{
+        list-style: none;
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+    .social-icon p{
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        color: whitesmoke;
+    }
+}

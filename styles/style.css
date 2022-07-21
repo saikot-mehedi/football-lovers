@@ -411,7 +411,7 @@ hr{
         margin-top: 20px;
         align-items: center;
     }
-    /* ---------------------------Viewall option visibility for tablet device----------------------- */
+    /* ---------------------------Viewall-option visibility for tablet device----------------------- */
     .viewall-option button{
         visibility: visible;
     }
